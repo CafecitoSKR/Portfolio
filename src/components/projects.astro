@@ -1,7 +1,6 @@
 
 ---
-
-
+import bondCashImage from "../assets/images/bondcash/bondcash_logn.png"
 ---
 <section >
     <div class="flex flex-col items-center m-6" >
@@ -22,7 +21,7 @@
 
         <div class="slider" id="slider">
          <figure class="relative w-full h-full aspect-video slider-childs" data-active>
-            <img src="/src/assets/images/bondcash/bondcash_logn.png" alt="" class="object-cover block w-full h-full">
+            <img src={bondCashImage.src} alt="" class="object-cover block w-full h-full">
             <div class="absolute inset-0 w-[90%] mx-auto h-max mt-auto space-y-4 py-8 hidden md:block">
                 <h2 class="text-3xl font-bold">Login</h2>
             </div>
