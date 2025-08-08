@@ -1,6 +1,7 @@
 ---
 import githubImage from "../assets/images/icons/github-icon.svg"
 import linkedinImage from "../assets/images/icons/linkedin-icon.svg"
+import cvPdf from "../assets/AlejandroEspinoCV.pdf"
 ---
 <nav id="navbar" class="flex justify-between items-center py-4 text-white md:fixed top-0 left-0 right-0 z-50 h-16 max-w-screen-lg mx-auto ">
     <div>
@@ -52,7 +53,7 @@ import linkedinImage from "../assets/images/icons/linkedin-icon.svg"
      </div>
      <!--Escritorio -->
     <div class="hidden md:flex gap-4">
-        <a href="/src/assets/AlejandroEspinoCV.pdf" download class="font-bold p-2 rounded-xl border cursor-pointer border-white hover:bg-white hover:text-black transition-colors duration-300">
+        <a href={cvPdf} download class="font-bold p-2 rounded-xl border cursor-pointer border-white hover:bg-white hover:text-black transition-colors duration-300">
             Descargar CV
         </a>
         <a href="https://github.com/CafecitoSKR" target="_blank" rel="noopener noreferrer" class="flex items-center">
