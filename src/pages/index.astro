@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/navbar.astro";
+import Hero from "../components/hero.astro";
+import Projects from "../components/projects.astro";
+import AboutMe from "../components/about-me.astro";
+import Knowledge from "../components/knowledge.astro";
+import Footer from "../components/footer.astro";	
+---
+
+<Layout>
+    <Navbar />
+    <main>
+        <section id="inicio">
+            <Hero />
+        </section>
+        <section id="habilidades">
+            <Knowledge />
+        </section>
+        <section id="proyectos">
+            <Projects />
+        </section>
+        <section id="contacto">
+            <AboutMe />
+        </section>
+    </main>
+    <Footer />
+</Layout>
