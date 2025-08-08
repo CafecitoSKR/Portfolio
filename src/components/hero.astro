@@ -1,6 +1,8 @@
 ---
-
+import arrowRightImage from "../assets/arrow-right.svg"
+import cvImage from "../assets/images/hero-image.jpeg"
 ---
+
 <section class="m-4 flex flex-col md:flex-row md:justify-between md:items-center mt-16">
     <div class="flex flex-col md:w-1/2" >
         <div class="flex flex-col items-center ">
@@ -18,19 +20,19 @@
         </div>
     </div>
     <div class="flex flex-col items-center md:w-1/2">
-        <img class="w-64 h-64 md:w-96 md:h-96 rounded-full my-8" src="src/assets/images/hero_profile.jpg" alt="Hero" />
+        <img class="w-64 h-64 md:w-96 md:h-96 rounded-full my-8 object-cover" src={cvImage.src} alt="Hero" />
         <div class="w-full">
             <div class="grid grid-cols-2 gap-2">
                 <button class="button">
                     <div class="icon flex items-center absolute z-2 left-[-40px] opacity-0 transition-all duration-300 ease-in-out">
-                        <img src="src/assets/arrow-right.svg" alt="Arrow Right" class="w-6 aspect-square" /> 
+                        <img src={arrowRightImage.src} alt="Arrow Right" class="w-6 aspect-square" /> 
                     </div>
                     <span class="transition-all duration-300 ease-in-out absolute left-[18%]  font-bold md:left-[25%] ">Descargar CV</span>
 
                 </button>
                 <button class="button">
                     <div class="icon flex items-center absolute z-2 left-[-40px] opacity-0 transition-all duration-300 ease-in-out">
-                        <img src="src/assets/arrow-right.svg" alt="Arrow Right" class="w-6 aspect-square" /> 
+                        <img src={arrowRightImage.src} alt="Arrow Right" class="w-6 aspect-square" /> 
                     </div>
                     <span class="transition-all duration-300 ease-in-out absolute left-[18%] font-bold md:left-[25%]">Contáctame</span>
 

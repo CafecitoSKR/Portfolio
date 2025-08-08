@@ -1,4 +1,6 @@
 ---
+import githubImage from "../assets/images/icons/github-icon.svg"
+import linkedinImage from "../assets/images/icons/linkedin-icon.svg"
 ---
 <nav id="navbar" class="flex justify-between items-center py-4 text-white md:fixed top-0 left-0 right-0 z-50 h-16 max-w-screen-lg mx-auto ">
     <div>
@@ -54,15 +56,11 @@
             Descargar CV
         </a>
         <a href="https://github.com/CafecitoSKR" target="_blank" rel="noopener noreferrer" class="flex items-center">
-            <svg class="w-6 h-6">
-                <use xlink:href="./src/assets/sprite.svg#github"></use>
-            </svg>
+            <img src={githubImage.src} alt="" class="w-8 aspect-square">
         </a>
     
         <a href="https://www.linkedin.com/in/alejandro-espino-flores-b7b139253" target="_blank" rel="noopener noreferrer" class="flex items-center">
-            <svg class="w-6 h-6">
-                <use xlink:href="./src/assets/sprite.svg#linkedin"></use>
-            </svg>
+            <img src={linkedinImage.src} alt="" class="w-8 aspect-square">
         </a>
 
     </div>
